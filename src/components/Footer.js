@@ -54,7 +54,7 @@ function Footer (props) {
             className={classes.text}
             variant="caption"
             gutterBottom
-          > © 2019 Made by Tatiana Scott using React and Material UI.
+          > © 2019 Made by Tatiana Scott using React, Gatsby and Material UI.
           </Typography>
         </Toolbar>
       </AppBar>

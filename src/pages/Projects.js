@@ -42,7 +42,7 @@ const styles = theme => ({
     ...theme.mixins.gutters(),
     paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
-    margin: '100px',
+    marginTop: '5%',
     marginLeft: '10%',
     marginRight: '10%',
     background: 'rgba(247, 247, 247, 0.21)',

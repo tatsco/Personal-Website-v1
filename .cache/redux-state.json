@@ -230,11 +230,130 @@
         "owner": "internal-data-bridge"
       }
     },
+    "df061285-5ccf-5767-8545-88537b90778b": {
+      "resolve": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/node_modules/gatsby-plugin-material-ui",
+      "id": "df061285-5ccf-5767-8545-88537b90778b",
+      "name": "gatsby-plugin-material-ui",
+      "version": "1.2.4",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "wrapRootElement",
+        "onInitialClientRender",
+        "onClientEntry"
+      ],
+      "ssrAPIs": [
+        "onRenderBody",
+        "wrapRootElement"
+      ],
+      "pluginFilepath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/node_modules/gatsby-plugin-material-ui",
+      "packageJson": {
+        "name": "gatsby-plugin-material-ui",
+        "description": "Gatsby plugin for Material-UI with built-in server-side rendering support",
+        "version": "1.2.4",
+        "main": "index.js",
+        "keywords": [
+          "react",
+          "gatsby",
+          "gatsby-plugin",
+          "material-ui"
+        ],
+        "author": {
+          "name": "hello@webappsolutions.de"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "react-jss",
+            "version": "^8.6.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.1.2"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.1.2"
+          },
+          {
+            "name": "@babel/preset-env",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "@babel/preset-react",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-eslint",
+            "version": "9.x"
+          },
+          {
+            "name": "eslint",
+            "version": "5.x"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "^2.9.0"
+          },
+          {
+            "name": "eslint-config-react-app",
+            "version": "^3.0.4"
+          },
+          {
+            "name": "eslint-plugin-flowtype",
+            "version": "2.x"
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "2.x"
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "6.x"
+          },
+          {
+            "name": "eslint-plugin-prettier",
+            "version": "^2.6.1"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "7.x"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.14.3"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "@material-ui/core",
+            "version": ">=3.0.0"
+          },
+          {
+            "name": "gatsby",
+            "version": ">=2.0.33"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "fc61e8c4432cb4d3333665bb0b1563ab",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
       "resolve": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "d41d8cd98f00b204e9800998ecf8427e",
+      "version": "5e141eb07d689802de496fb833bec837",
       "pluginOptions": {
         "plugins": []
       },
@@ -302,7 +421,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "e4edb96d69de2ef930c855146910f357",
+        "contentDigest": "39a2b32ef646b5aeff59a6b2fd345668",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -416,12 +535,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-30T02:43:40.602Z",
+      "buildTime": "2019-03-30T20:27:51.531Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "81a992968b8c0f22affbd945165c9767",
+        "contentDigest": "e6e5575f47928d7576bc71638b95f1fe",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -530,11 +649,32 @@
         "description": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
         "owner": "internal-data-bridge"
       }
+    },
+    "SitePage /Thanks/": {
+      "jsonName": "thanks-03c",
+      "internalComponentName": "ComponentThanks",
+      "path": "/Thanks/",
+      "component": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js",
+      "componentChunkName": "component---src-pages-thanks-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
+      "pluginCreatorId": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
+      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js",
+      "id": "SitePage /Thanks/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0fc950ed992bfd1a66ce7652a85df929",
+        "description": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
+        "owner": "internal-data-bridge"
+      }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "2e662855d98a08ab5211214c4ac1d6ae"
+    "PLUGINS_HASH": "a15abc032e18ffd4e486efcac23371d4"
   },
   "componentDataDependencies": {
     "nodes": {},
@@ -546,9 +686,18 @@
     "index": "140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "contact-530": "27/path---contact-530-e9f-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "projects-6a7": "905/path---projects-6-a-7-b75-0SUcWyAf8ecbYDsMhQkEfPzV8",
-    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8"
+    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "thanks-03c": "210/path---thanks-03-c-f62-0SUcWyAf8ecbYDsMhQkEfPzV8"
   },
   "components": {
+    "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/.cache/dev-404-page.js": {
+      "query": "",
+      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/.cache/dev-404-page.js",
+      "pages": [
+        "/dev-404-page/"
+      ],
+      "isInBootstrap": true
+    },
     "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/About.js": {
       "query": "",
       "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/About.js",
@@ -589,13 +738,13 @@
       ],
       "isInBootstrap": true
     },
-    "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/.cache/dev-404-page.js": {
+    "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js": {
       "query": "",
-      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/.cache/dev-404-page.js",
+      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js",
       "pages": [
-        "/dev-404-page/"
+        "/Thanks/"
       ],
-      "isInBootstrap": true
+      "isInBootstrap": false
     }
   },
   "staticQueryComponents": {}

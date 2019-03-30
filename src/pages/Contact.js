@@ -36,7 +36,7 @@ const styles = theme => ({
     ...theme.mixins.gutters(),
     paddingTop: theme.spacing.unit * 2,
     paddingBottom: theme.spacing.unit * 2,
-    margin: '100px',
+    marginTop: '5%',
     marginLeft: '10%',
     marginRight: '10%',
     background: 'rgba(247, 247, 247, 0.21)',
@@ -60,15 +60,10 @@ class Contact extends React.Component {
       message: '',
     }
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
-  };
-
-  handleSubmit = (event) => {
-    event.preventdefault()
   };
 
   render () {
@@ -86,66 +81,67 @@ class Contact extends React.Component {
           >Contact Me
         </Typography>
         <form
-          className={classes.container}
-          noValidate
-          autoComplete="off"
-          onSubmit={this.handleSubmit}
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          >
-        <input type="hidden" name="bot-field"/>
-        <TextField
-          id="standard-firstname"
-          name="firstName"
-          label="First Name"
-          type="text"
-          className={classes.textField}
-          value={firstName}
-          onChange={this.handleChange}
-          margin="normal"
-        />
-        <TextField
-          id="standard-lastname"
-          label="Last Name"
-          type="text"
-          name="lastName"
-          className={classes.textField}
-          value={lastName}
-          onChange={this.handleChange}
-          margin="normal"
-        />
-        <TextField
-          id="standard-email"
-          label="Email"
-          type="email"
-          name="_replyto"
-          className={classes.textField}
-          value={_replyTo}
-          onChange={this.handleChange}
-          margin="normal"
-        />
-        <TextField
-          id="standard-message"
-          label="Message"
-          type="text"
-          name="message"
-          className={classes.textField}
-          value={message}
-          onChange={this.handleChange}
-          margin="normal"
-          multiline
-          rows="5"
-        />
-        <ListItem className={classes.container}>
-          <Button
-            className={classes.button}
-            type="submit">
-            Submit
-          </Button>
-        </ListItem>
-      </form>
+        className={classes.container}
+        noValidate
+        autoComplete="off"
+        name="contact"
+        action="/Thanks"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="bot-field"/>
+          <TextField
+            id="standard-firstname"
+            name="firstName"
+            label="First Name"
+            type="text"
+            className={classes.textField}
+            value={firstName}
+            onChange={this.handleChange}
+            margin="normal"
+          />
+          <TextField
+            id="standard-lastname"
+            label="Last Name"
+            type="text"
+            name="lastName"
+            className={classes.textField}
+            value={lastName}
+            onChange={this.handleChange}
+            margin="normal"
+          />
+          <TextField
+            id="standard-email"
+            label="Email"
+            type="email"
+            name="_replyto"
+            className={classes.textField}
+            value={_replyTo}
+            onChange={this.handleChange}
+            margin="normal"
+          />
+          <TextField
+            id="standard-message"
+            label="Message"
+            type="text"
+            name="message"
+            className={classes.textField}
+            value={message}
+            onChange={this.handleChange}
+            margin="normal"
+            multiline
+            rows="5"
+          />
+          <ListItem className={classes.container}>
+            <Button
+              className={classes.button}
+              type="submit"
+              >
+              Submit
+            </Button>
+          </ListItem>
+        </form>
       </Paper>
       <Footer/>
     </div>
