@@ -81,16 +81,15 @@ class Contact extends React.Component {
           >Contact Me
         </Typography>
         <form
-        className={classes.container}
-        noValidate
-        autoComplete="off"
-        name="contact"
-        action="/Thanks"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+          className={classes.container}
+          autoComplete="off"
+          name="contact"
+          action="/Thanks"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="bot-field"/>
+
           <TextField
             id="standard-firstname"
             name="firstName"
