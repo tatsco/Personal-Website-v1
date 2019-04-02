@@ -28,16 +28,16 @@ const Thanks = (props) => {
 
   return (
     <div className="thanks">
-    <Header/>
-    <Paper className={classes.root}>
-      <Typography
-        className={classes.headerText}
-        variant="h4"
-        align="center"
-        >Your message has been received. Thank you!
-        </Typography>
-    </Paper>
-    <Footer/>
+      <Header/>
+      <Paper className={classes.root}>
+        <Typography
+          className={classes.headerText}
+          variant="h4"
+          align="center"
+          >Your message has been received. Thank you!
+          </Typography>
+      </Paper>
+      <Footer/>
     </div>
   )
 };

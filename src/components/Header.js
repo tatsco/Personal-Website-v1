@@ -19,7 +19,8 @@ const styles = {
   },
   text: {
     fontFamily: 'Unica One',
-    color: '#212121'
+    color: '#212121',
+    textDecoration: 'none',
   }
 };
 
@@ -33,36 +34,20 @@ function Header (props) {
         <AppBar position="static" color="inherit">
           <Toolbar>
             <Typography className={classes.grow} variant="h4" noWrap>
-                <Link to="/" style={{textDecoration:'none'}} className={classes.text}>Tatiana Scott</Link>
+              <Link to="/" className={classes.text}>Tatiana Scott</Link>
             </Typography>
             <div className="header-nav">
               <Button>
-                <Link
-                  to="/About"
-                  style={{textDecoration:'none'}} className={classes.text}
-                  >About
-                </Link>
+                <Link to="/About" className={classes.text}>About</Link>
               </Button>
               <Button>
-                <Link
-                  to="/Projects"
-                  style={{textDecoration:'none'}} className={classes.text}
-                  >Projects
-                </Link>
+                <Link to="/Projects" className={classes.text}>Projects</Link>
               </Button>
               <Button>
-                <Link
-                  to="/OtherInterests"
-                  style={{textDecoration:'none'}} className={classes.text}
-                  >Interests
-                </Link>
+                <Link to="/OtherInterests" className={classes.text}>Interests</Link>
               </Button>
               <Button>
-                <Link
-                  to="Contact"
-                  style={{textDecoration:'none'}} className={classes.text}
-                  >Contact
-                </Link>
+                <Link to="Contact" className={classes.text}>Contact</Link>
               </Button>
             </div>
           </Toolbar>

@@ -51,7 +51,7 @@ const styles = theme => ({
   tableCell: {
     paddingRight: 4,
     paddingLeft: 5
-  }
+  },
 });
 
 let id = 0;
@@ -75,28 +75,24 @@ const Home = (props) => {
     <div className="index">
       <Header/>
       <Paper className={classes.root}>
-        <img
-          className={classes.homeImg}
-          src={headshot}
-          alt="Me"
-        />
+        <img className={classes.homeImg} src={headshot} alt="Me"/>
         <Typography
           className={classes.homeTextTitle}
           variant="h4"
           align="center"
-        > Full-Stack Software Engineer
+        >Full-Stack Software Engineer
         </Typography>
         <Table className={classes.table} align="center">
           <TableHead>
             <TableRow>
-              <TableCell align="center" variant="h5">Skill Snippet</TableCell>
+              <TableCell align="center" variant="head">Skill Snippet</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map(row => (
             <TableRow key={row.id}>
-              <TableCell className={classes.tableCell} component="th" scope="row" variant="h7">{row.heading}</TableCell>
-              <TableCell className={classes.tableCell} align="right" variant="h8">{row.skill}</TableCell>
+              <TableCell className={classes.tableCell} component="th" scope="row" variant="body">{row.heading}</TableCell>
+              <TableCell className={classes.tableCell} align="right" variant="body">{row.skill}</TableCell>
             </TableRow>
             ))}
           </TableBody>
@@ -110,7 +106,7 @@ const Home = (props) => {
       </Paper>
       <Footer/>
     </div>
-  )
+  );
 }
 
 Home.propTypes = {

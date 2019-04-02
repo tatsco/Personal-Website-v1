@@ -83,7 +83,7 @@ const OtherInterests = (props) => {
           direction="row"
           justify="center"
           alignItems="center"
-          > {interestList.map((interest) => {
+        >{interestList.map((interest) => {
             return (
               <Grid item sm={6} align="center">
               <Card className={classes.cardText}>
@@ -97,13 +97,14 @@ const OtherInterests = (props) => {
                     className={classes.cardText}
                     gutterBottom
                     variant="h5"
-                    component="h2">
-                    {interest.imgTitle}
+                    component="h2"
+                    key={interest.interestNumber}
+                  >{interest.imgTitle}
                   </Typography>
                   <Typography
                     component="p"
-                    className={classes.cardText}>
-                    {interest.description}
+                    className={classes.cardText}
+                  >{interest.description}
                   </Typography>
                 </CardContent>
               <CardActions>
@@ -122,7 +123,7 @@ const OtherInterests = (props) => {
       </Paper>
       <Footer/>
     </div>
-  )
+  );
 }
 
 OtherInterests.propTypes = {

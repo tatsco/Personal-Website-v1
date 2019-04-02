@@ -55,10 +55,10 @@ const styles = theme => ({
 const projectList = [
   {
     projectNumber: 1,
-    imgUrl: bookstack,
-    imgTitle: 'Book Stack',
-    siteUrl: 'http://bookstack-gs.herokuapp.com/',
-    description: 'E-commerce bookstore,built using Javascript, React, Redux, Materiul UI, Node, Express and Sequelize. Used a Stripe API for checkout functionality.'
+    imgUrl: kagu,
+    imgTitle: 'Pear Kagu',
+    siteUrl: 'http://www.gokagu.com/',
+    description: "A learning tool built with PostgreSQL, Sequelize, Express, React, Redux and Material UI. Aggregated data from external YouTube, Meetup and News API's."
   },
   {
     projectNumber: 2,
@@ -69,12 +69,14 @@ const projectList = [
   },
   {
     projectNumber: 3,
-    imgUrl: kagu,
-    imgTitle: 'Pear Kagu',
-    siteUrl: 'http://www.gokagu.com/',
-    description: "A learning tool built with PostgreSQL, Sequelize, Express, React, Redux and Material UI. Aggregated data from external YouTube, Meetup and News API's."
+    imgUrl: bookstack,
+    imgTitle: 'Book Stack',
+    siteUrl: 'http://bookstack-gs.herokuapp.com/',
+    description: 'E-commerce bookstore,built using Javascript, React, Redux, Materiul UI, Node, Express and Sequelize. Used a Stripe API for checkout functionality.'
   },
 ]
+
+
 
 const Projects = (props) => {
 
@@ -93,7 +95,7 @@ const Projects = (props) => {
           direction="row"
           justify="center"
           alignItems="center"
-          >
+        >
           {projectList.map((project) => {
             return (
               <Grid item sm={6} align="center">
@@ -109,11 +111,13 @@ const Projects = (props) => {
                     gutterBottom
                     variant="h5"
                     component="h2"
+
                   >{project.imgTitle}
                   </Typography>
                   <Typography
                     component="p"
                     className={classes.descriptionText}
+
                   >{project.description}
                   </Typography>
                 </CardContent>

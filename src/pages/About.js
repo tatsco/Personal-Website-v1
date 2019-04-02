@@ -19,11 +19,12 @@ const styles = theme => ({
     background: 'rgba(247, 247, 247, 0.21)',
   },
   headerText: {
+    paddingBottom: '20px',
     fontFamily: 'Unica One',
   },
   bodyText: {
     fontFamily: 'Raleway',
-  }
+  },
 });
 
 const About = (props) => {
@@ -34,25 +35,28 @@ const About = (props) => {
     <div className="about">
       <Header/>
       <Paper className={classes.root}>
-        <Typography className={classes.headerText}  variant="h4" align="center" >
+        <Typography className={classes.headerText} variant="h4" align="center">
           About Me
         </Typography>
         <Typography className={classes.bodyText} component="p" variant="body2">
-          <p>I am impassioned S.T.E.A.M. (Science, Technology, Education, Art and Mathematics) professional with an unquenchable affinity for understanding what, how and why things work (the scientific method), which drives my interests in science, technology and herbalism.
-          </p>
-          <p>I've worked in the Forensic Science industry for 8 years performing a variety of sample and data analysis and I worked on a team researching the implementation of new instrumentation to increase efficiency in the laboratory.
-          </p>
-          <p>In that time, I worked closely in a collective of proficient web design and development professionals to build and promote an online resource to connect real-life forensic experts with students for career mentorship and guidance. Through this work, I learned Javascript, CSS, and HTML in my spare time and realized that I enjoyed working on a team, brainstorming ideas and ways to build and manifest those ideas using new technologies.
-          </p>
-          <p>In my spare time, I've also studied herbalism for three years as a spiritual practice and also as a formal means to further my work towards my herbal remedy and health/beauty product line.
-          </p>
-          <p>With an innate need to inquire, learn, create and improve, I seek a role that involves a combination of observation, exploration, experimentation, interpretation, implementation and some room for creative and artistic expression. It would be a dream to fuse my past experiences with my current skillset and education.
-          </p>
+        I am impassioned S.T.E.A.M. (Science, Technology, Education, Art and Mathematics) professional with an unquenchable affinity for understanding what, how and why things work (the scientific method), which drives my interests in science, technology and herbalism.
+        </Typography>
+        <Typography className={classes.bodyText} component="p" variant="body2">
+        I've worked in the Forensic Science industry for 8 years performing a variety of sample and data analysis and I worked on a team researching the implementation of new instrumentation to increase efficiency in the laboratory.
+        </Typography>
+        <Typography className={classes.bodyText} component="p" variant="body2">
+        In that time, I worked closely in a collective of proficient web design and development professionals to build and promote an online resource to connect real-life forensic experts with students for career mentorship and guidance. Through this work, I learned Javascript, CSS, and HTML in my spare time and realized that I enjoyed working on a team, brainstorming ideas and ways to build and manifest those ideas using new technologies.
+        </Typography>
+        <Typography className={classes.bodyText} component="p" variant="body2">
+        In my spare time, I've also studied herbalism for three years as a spiritual practice and also as a formal means to further my work towards my herbal remedy and health/beauty product line.
+        </Typography>
+        <Typography className={classes.bodyText} component="p" variant="body2">
+        With an innate need to inquire, learn, create and improve, I seek a role that involves a combination of observation, exploration, experimentation, interpretation, implementation and some room for creative and artistic expression. It would be a dream to fuse my past experiences with my current skillset and education.
         </Typography>
       </Paper>
       <Footer/>
     </div>
-  )
+  );
 }
 
 About.propTypes = {

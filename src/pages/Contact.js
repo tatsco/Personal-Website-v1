@@ -70,81 +70,79 @@ class Contact extends React.Component {
     const { classes } = this.props;
     const { firstName, lastName, _replyTo, message} = this.state;
 
-  return (
-    <div className="projects">
-      <Header/>
-      <Paper className={classes.root}>
-        <Typography
-          className={classes.header}
-          variant="h4"
-          align="center"
-          >Contact Me
-        </Typography>
-        <form
-          className={classes.container}
-          autoComplete="off"
-          name="contact"
-          action="/Thanks"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-
-          <TextField
-            id="standard-firstname"
-            name="firstName"
-            label="First Name"
-            type="text"
-            className={classes.textField}
-            value={firstName}
-            onChange={this.handleChange}
-            margin="normal"
-          />
-          <TextField
-            id="standard-lastname"
-            label="Last Name"
-            type="text"
-            name="lastName"
-            className={classes.textField}
-            value={lastName}
-            onChange={this.handleChange}
-            margin="normal"
-          />
-          <TextField
-            id="standard-email"
-            label="Email"
-            type="email"
-            name="_replyto"
-            className={classes.textField}
-            value={_replyTo}
-            onChange={this.handleChange}
-            margin="normal"
-          />
-          <TextField
-            id="standard-message"
-            label="Message"
-            type="text"
-            name="message"
-            className={classes.textField}
-            value={message}
-            onChange={this.handleChange}
-            margin="normal"
-            multiline
-            rows="5"
-          />
-          <ListItem className={classes.container}>
-            <Button
-              className={classes.button}
-              type="submit"
-              >
-              Submit
-            </Button>
-          </ListItem>
-        </form>
-      </Paper>
-      <Footer/>
-    </div>
-  )
+    return (
+      <div className="projects">
+        <Header/>
+        <Paper className={classes.root}>
+          <Typography
+            className={classes.header}
+            variant="h4"
+            align="center"
+            >Contact Me
+          </Typography>
+          <form
+            className={classes.container}
+            autoComplete="off"
+            name="contact"
+            action="/thanks"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <TextField
+              id="standard-firstname"
+              name="firstName"
+              label="First Name"
+              type="text"
+              className={classes.textField}
+              value={firstName}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+            <TextField
+              id="standard-lastname"
+              label="Last Name"
+              type="text"
+              name="lastName"
+              className={classes.textField}
+              value={lastName}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+            <TextField
+              id="standard-email"
+              label="Email"
+              type="email"
+              name="_replyto"
+              className={classes.textField}
+              value={_replyTo}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+            <TextField
+              id="standard-message"
+              label="Message"
+              type="text"
+              name="message"
+              className={classes.textField}
+              value={message}
+              onChange={this.handleChange}
+              margin="normal"
+              multiline
+              rows="5"
+            />
+            <ListItem className={classes.container}>
+              <Button
+                className={classes.button}
+                type="submit"
+                >Submit
+              </Button>
+            </ListItem>
+          </form>
+        </Paper>
+        <Footer/>
+      </div>
+    )
   }
 }
 

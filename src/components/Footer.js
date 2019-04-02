@@ -37,27 +37,27 @@ function Footer (props) {
 
   return (
 
-      <AppBar position="fixed" color="inherit" className={classes.appBar}>
-        <Toolbar className={classes.toolbar}>
-          <div className="footer-social">
-            <a href="https://www.linkedin.com/in/tatianascott" target="#">
-              <img src={linkedinIcon} className={classes.socialImg} alt={"LinkedIn Icon"}/>
-            </a>
-            <a href="https://github.com/tatsco" target="#">
-              <img src={githubIcon} className={classes.socialImg} alt={"Github Icon"}/>
-            </a>
-            <a href="https://medium.com/@tatianascott" target="#">
-              <img src={mediumIcon} className={classes.socialImg} alt={"Medium Icon"}/>
-            </a>
-          </div>
-          <Typography
-            className={classes.text}
-            variant="caption"
-            gutterBottom
-          > © 2019 Made by Tatiana Scott using React, Gatsby and Material UI.
-          </Typography>
-        </Toolbar>
-      </AppBar>
+    <AppBar position="fixed" color="inherit" className={classes.appBar}>
+      <Toolbar className={classes.toolbar}>
+        <div className="footer-social">
+          <a href="https://www.linkedin.com/in/tatianascott" target="#">
+            <img src={linkedinIcon} className={classes.socialImg} alt={"LinkedIn Icon"}/>
+          </a>
+          <a href="https://github.com/tatsco" target="#">
+            <img src={githubIcon} className={classes.socialImg} alt={"Github Icon"}/>
+          </a>
+          <a href="https://medium.com/@tatianascott" target="#">
+            <img src={mediumIcon} className={classes.socialImg} alt={"Medium Icon"}/>
+          </a>
+        </div>
+        <Typography
+          className={classes.text}
+          variant="caption"
+          gutterBottom
+        > © 2019 Made by Tatiana Scott using React, Gatsby and Material UI.
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 
