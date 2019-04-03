@@ -85,7 +85,7 @@ class Contact extends React.Component {
             autoComplete="off"
             name="contact"
             action="/thanks"
-            method="post"
+            method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
