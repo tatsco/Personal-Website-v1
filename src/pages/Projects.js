@@ -46,6 +46,7 @@ const styles = theme => ({
     marginLeft: '10%',
     marginRight: '10%',
     background: 'rgba(247, 247, 247, 0.21)',
+    marginBottom: '100px',
   },
   titleText: {
     fontFamily: 'Raleway',

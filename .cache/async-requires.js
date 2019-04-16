@@ -8,7 +8,7 @@ exports.components = {
   "component---src-pages-index-js": () => import("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-other-interests-js": () => import("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/OtherInterests.js" /* webpackChunkName: "component---src-pages-other-interests-js" */),
   "component---src-pages-projects-js": () => import("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Projects.js" /* webpackChunkName: "component---src-pages-projects-js" */),
-  "component---src-pages-thanks-js": () => import("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js" /* webpackChunkName: "component---src-pages-thanks-js" */)
+  "component---src-pages-thanks-js": () => import("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/thanks.js" /* webpackChunkName: "component---src-pages-thanks-js" */)
 }
 
 exports.data = () => import(/* webpackChunkName: "pages-manifest" */ "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/.cache/data.json")

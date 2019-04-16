@@ -535,12 +535,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-31T15:52:41.744Z",
+      "buildTime": "2019-04-16T19:47:27.870Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "94f3a30b6ca6e71fba3fab72dcfe9a23",
+        "contentDigest": "65094d1ec2050135de7407b16010b0df",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -650,23 +650,23 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /Thanks/": {
-      "jsonName": "thanks-03c",
+    "SitePage /thanks/": {
+      "jsonName": "thanks-e0e",
       "internalComponentName": "ComponentThanks",
-      "path": "/Thanks/",
-      "component": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js",
+      "path": "/thanks/",
+      "component": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/thanks.js",
       "componentChunkName": "component---src-pages-thanks-js",
       "isCreatedByStatefulCreatePages": true,
       "context": {},
       "pluginCreator___NODE": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
       "pluginCreatorId": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
-      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js",
-      "id": "SitePage /Thanks/",
+      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/thanks.js",
+      "id": "SitePage /thanks/",
       "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0fc950ed992bfd1a66ce7652a85df929",
+        "contentDigest": "484340cff829cf72763abba7e17d65f1",
         "description": "db6f42a1-31e2-5cfe-bf2b-8d3c0b3957b1",
         "owner": "internal-data-bridge"
       }
@@ -687,7 +687,8 @@
     "contact-530": "27/path---contact-530-e9f-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "projects-6a7": "905/path---projects-6-a-7-b75-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8",
-    "thanks-03c": "210/path---thanks-03-c-f62-0SUcWyAf8ecbYDsMhQkEfPzV8"
+    "thanks-03c": "210/path---thanks-03-c-f62-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "thanks-e0e": "393/path---thanks-e-0-e-804-0SUcWyAf8ecbYDsMhQkEfPzV8"
   },
   "components": {
     "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/.cache/dev-404-page.js": {
@@ -738,11 +739,11 @@
       ],
       "isInBootstrap": true
     },
-    "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js": {
+    "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/thanks.js": {
       "query": "",
-      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js",
+      "componentPath": "/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/thanks.js",
       "pages": [
-        "/Thanks/"
+        "/thanks/"
       ],
       "isInBootstrap": true
     }

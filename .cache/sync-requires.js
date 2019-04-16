@@ -11,6 +11,6 @@ exports.components = {
   "component---src-pages-index-js": hot(preferDefault(require("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/index.js"))),
   "component---src-pages-other-interests-js": hot(preferDefault(require("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/OtherInterests.js"))),
   "component---src-pages-projects-js": hot(preferDefault(require("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Projects.js"))),
-  "component---src-pages-thanks-js": hot(preferDefault(require("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/Thanks.js")))
+  "component---src-pages-thanks-js": hot(preferDefault(require("/Users/tatianascott 1/AllThingsCode/PersonalProjects/Personal-Website/src/pages/thanks.js")))
 }
 

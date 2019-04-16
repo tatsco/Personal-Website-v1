@@ -25,13 +25,13 @@
         "path": "/Projects/"
     },
     {
-        "componentChunkName": "component---src-pages-thanks-js",
-        "jsonName": "thanks-03c",
-        "path": "/Thanks/"
-    },
-    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-thanks-js",
+        "jsonName": "thanks-e0e",
+        "path": "/thanks/"
     }
 ]
