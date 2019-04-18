@@ -101,11 +101,10 @@ class Contact extends React.Component {
           </Typography>
           <form
           className={classes.container}
-          onSubmit={this.handleSubmit}
+          // onSubmit={this.handleSubmit}
           name="contact-form"
           data-netlify="true"
           method="POST"
-
           action="/thanks"
         >
           <TextField
