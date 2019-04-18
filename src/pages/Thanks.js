@@ -22,7 +22,7 @@ const styles = theme => ({
   },
 });
 
-const Thanks = (props) => {
+const thanks = (props) => {
 
   const {classes} = props;
 
@@ -42,10 +42,10 @@ const Thanks = (props) => {
   )
 };
 
-Thanks.propTypes = {
+thanks.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Thanks);
+export default withStyles(styles)(thanks);
 
 

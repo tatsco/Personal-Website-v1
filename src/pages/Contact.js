@@ -11,6 +11,11 @@ import Footer from '../components/Footer';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 const styles = theme => ({
   button: {
@@ -62,6 +67,18 @@ class Contact extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
@@ -82,12 +99,13 @@ class Contact extends React.Component {
           </Typography>
           <form
             className={classes.container}
-            autoComplete="off"
-            name="contact"
-            action="/thanks"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            onSubmit={this.handleSubmit}
+            // autoComplete="off"
+            // name="contact"
+            // action="/thanks"
+            // method="POST"
+            // data-netlify="true"
+            // data-netlify-honeypot="bot-field"
           >
             <TextField
               id="standard-firstname"
