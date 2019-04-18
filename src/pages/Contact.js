@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby-link'
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -11,11 +12,11 @@ import Footer from '../components/Footer';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
-// const encode = (data) => {
-//   return Object.keys(data)
-//       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//       .join("&");
-// }
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 const styles = theme => ({
   button: {
@@ -65,24 +66,26 @@ class Contact extends React.Component {
       message: '',
     }
     this.handleChange = this.handleChange.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  // handleSubmit = e => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     redirect: "follow",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...this.state })
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error));
-
-  //   e.preventDefault();
-  // };
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch(error => alert(error));
   };
 
   render () {
@@ -100,13 +103,15 @@ class Contact extends React.Component {
             >Contact Me
           </Typography>
           <form
-          className={classes.container}
-          // onSubmit={this.handleSubmit}
-          name="contact-form"
-          data-netlify="true"
-          method="POST"
-          action="/thanks"
-        >
+            className={classes.container}
+            onSubmit={this.handleSubmit}
+            name="contact"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            method="post"
+            action="/thanks"
+          >
+          <input type="hidden" name="form-name" value="contact" />
           <TextField
             id="standard-firstname"
             name="firstName"
