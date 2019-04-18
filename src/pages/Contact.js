@@ -11,11 +11,11 @@ import Footer from '../components/Footer';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+// const encode = (data) => {
+//   return Object.keys(data)
+//       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//       .join("&");
+// }
 
 const styles = theme => ({
   button: {
@@ -65,19 +65,21 @@ class Contact extends React.Component {
       message: '',
     }
     this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
+  // handleSubmit = e => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     redirect: "follow",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...this.state })
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error));
 
-    e.preventDefault();
-  };
+  //   e.preventDefault();
+  // };
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
@@ -98,65 +100,64 @@ class Contact extends React.Component {
             >Contact Me
           </Typography>
           <form
-            className={classes.container}
-            onSubmit={this.handleSubmit}
-            // autoComplete="off"
-            // name="contact"
-            // action="/thanks"
-            // method="POST"
-            // data-netlify="true"
-            // data-netlify-honeypot="bot-field"
-          >
-            <TextField
-              id="standard-firstname"
-              name="firstName"
-              label="First Name"
-              type="text"
-              className={classes.textField}
-              value={firstName}
-              onChange={this.handleChange}
-              margin="normal"
-            />
-            <TextField
-              id="standard-lastname"
-              label="Last Name"
-              type="text"
-              name="lastName"
-              className={classes.textField}
-              value={lastName}
-              onChange={this.handleChange}
-              margin="normal"
-            />
-            <TextField
-              id="standard-email"
-              label="Email"
-              type="email"
-              name="_replyto"
-              className={classes.textField}
-              value={_replyTo}
-              onChange={this.handleChange}
-              margin="normal"
-            />
-            <TextField
-              id="standard-message"
-              label="Message"
-              type="text"
-              name="message"
-              className={classes.textField}
-              value={message}
-              onChange={this.handleChange}
-              margin="normal"
-              multiline
-              rows="5"
-            />
-            <ListItem className={classes.container}>
-              <Button
-                className={classes.button}
-                type="submit"
-                >Submit
-              </Button>
-            </ListItem>
-          </form>
+          className={classes.container}
+          onSubmit={this.handleSubmit}
+          name="contact-form"
+          data-netlify="true"
+          method="POST"
+
+          action="/thanks"
+        >
+          <TextField
+            id="standard-firstname"
+            name="firstName"
+            label="First Name"
+            type="text"
+            className={classes.textField}
+            value={firstName}
+            onChange={this.handleChange}
+            margin="normal"
+          />
+          <TextField
+            id="standard-lastname"
+            label="Last Name"
+            type="text"
+            name="lastName"
+            className={classes.textField}
+            value={lastName}
+            onChange={this.handleChange}
+            margin="normal"
+          />
+          <TextField
+            id="standard-email"
+            label="Email"
+            type="email"
+            name="_replyto"
+            className={classes.textField}
+            value={_replyTo}
+            onChange={this.handleChange}
+            margin="normal"
+          />
+          <TextField
+            id="standard-message"
+            label="Message"
+            type="text"
+            name="message"
+            className={classes.textField}
+            value={message}
+            onChange={this.handleChange}
+            margin="normal"
+            multiline
+            rows="5"
+          />
+          <ListItem className={classes.container}>
+            <Button
+              className={classes.button}
+              type="submit"
+              >Submit
+            </Button>
+          </ListItem>
+        </form>
         </Paper>
         <Footer/>
       </div>
