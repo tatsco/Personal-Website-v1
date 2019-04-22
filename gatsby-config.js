@@ -2,9 +2,12 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-material-ui`,
-      options: {
-        // Add any options here
-      },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-138905713-1",
+      },
+    }
   ],
 };
