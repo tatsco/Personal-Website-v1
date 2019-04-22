@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 module.exports = {
   plugins: [
     {
@@ -8,11 +6,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
-        // your google analytics tracking id
-        trackingId: GOOGLE_ANALYTICS_ID,
-        // Puts tracking script in the head instead of the body
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
         head: false,
-        // enable ip anonymization
         anonymize: true,
       },
     },
