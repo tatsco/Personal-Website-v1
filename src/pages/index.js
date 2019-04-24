@@ -64,7 +64,6 @@ const rows = [
   createData('Proficient', 'Javascript, React, Redux, Node, Express, Sequelize, PostgreSQL'),
   createData('Knowledgeable', 'HTML, CSS, Material UI, Bootstrap, Gatsby, A-Frame, Agile, Git'),
   createData('Some Experience', 'Python, Heroku, Webpack, TDD (Mocha, Chai, Jasmine, Enzyme)'),
-  createData('Other Interests', 'Data Science, Digital Forensics'),
 ];
 
 const Home = (props) => {
