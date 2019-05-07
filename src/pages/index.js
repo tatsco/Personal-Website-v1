@@ -95,7 +95,7 @@ const Home = (props) => {
           className={classes.homeTextDescrip}
           variant="body"
           align="center"
-        >I am a Full Stack Software Engineer with nine years in STEM. I have one year of experience working in agile environments building web applications primarily with Javascript. I am seeking a role that leans more towards the frontend with a possible opportunity to explore the backend, as well as the ability to continue learning and growing as a developer.
+        >I am a Full Stack Software Engineer with nine years working in STEM. I have one year of experience working in agile environments building web applications primarily with Javascript. I am seeking a role that leans more towards the frontend with a possible opportunity to explore the backend, as well as the ability to continue learning and growing as a developer.
         </Typography>
         <Table className={classes.table} align="center">
           <TableHead>
