@@ -28,6 +28,7 @@ const styles = theme => ({
     marginTop: '5%',
     marginLeft: '10%',
     marginRight: '10%',
+    marginBottom: '10%',
     background: 'rgba(247, 247, 247, 0.21)',
   },
   homeImg: {
@@ -42,6 +43,12 @@ const styles = theme => ({
   homeTextTitle: {
     paddingTop:'14px',
     fontFamily: 'Unica One',
+  },
+  homeTextDescrip: {
+    paddingTop:'14px',
+    marginLeft: '10%',
+    marginRight: '10%',
+    fontFamily: 'Raleway',
   },
   table: {
     fontFamily: 'Raleway',
@@ -61,9 +68,12 @@ function createData(heading, skill) {
 }
 
 const rows = [
-  createData('Proficient', 'Javascript, React, Redux, Node, Express, Sequelize, PostgreSQL'),
-  createData('Knowledgeable', 'HTML, CSS, Material UI, Bootstrap, Gatsby, A-Frame, Agile, Git'),
-  createData('Some Experience', 'Python, Heroku, Webpack, TDD (Mocha, Chai, Jasmine, Enzyme)'),
+  createData('Languages', 'Javascript, Python, SQL'),
+  createData('Frontend Development', 'React, Redux, HTML/CSS'),
+  createData('Backend Development', 'Node, Express, PostgreSQL'),
+  createData('Test Driven Development', 'Mocha, Chai, Jasmine, Enzyme'),
+  createData('Leadership Skills', 'Agile Project Management, Mentorship and Teaching'),
+  createData('Soft Skills', 'Critical Thinker and Problem Solver, Detail Oriented and Active Listener, Fast Learner and Self Starter, Team-Player')
 ];
 
 const Home = (props) => {
@@ -80,6 +90,12 @@ const Home = (props) => {
           variant="h4"
           align="center"
         >Full-Stack Software Engineer
+        </Typography>
+        <Typography
+          className={classes.homeTextDescrip}
+          variant="body"
+          align="center"
+        >I am a Full Stack Software Engineer with nine years in STEM. I have one year of experience working in agile environments building web applications primarily with Javascript. I am seeking a role that leans more towards the frontend with a possible opportunity to explore the backend, as well as the ability to continue learning and growing as a developer.
         </Typography>
         <Table className={classes.table} align="center">
           <TableHead>
