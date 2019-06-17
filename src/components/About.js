@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
@@ -33,7 +31,6 @@ const About = (props) => {
 
   return (
     <div className="about">
-      <Header/>
       <Paper className={classes.root}>
         <Typography className={classes.headerText} variant="h4" align="center">
           About Me
@@ -54,7 +51,6 @@ const About = (props) => {
         With an innate need to inquire, learn, create and improve, I seek a role that involves a combination of observation, exploration, experimentation, interpretation, implementation and some room for creative and artistic expression. It would be a dream to fuse my past experiences with my current skillset and education.
         </Typography>
       </Paper>
-      <Footer/>
     </div>
   );
 }

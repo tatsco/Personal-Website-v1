@@ -11,8 +11,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import forensicnexus from '../images/forensicnexus.png';
 import loveterese from '../images/loveterese.png';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
@@ -69,7 +67,6 @@ const OtherInterests = (props) => {
 
   return (
     <div className="projects">
-      <Header/>
       <Paper className={classes.root}>
         <Typography
           className={classes.headerText}
@@ -121,7 +118,6 @@ const OtherInterests = (props) => {
         }
         </Grid>
       </Paper>
-      <Footer/>
     </div>
   );
 }

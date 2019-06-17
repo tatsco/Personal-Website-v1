@@ -5,7 +5,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { Link } from "@reach/router";
+// import { Link } from "gatsby";
+import { Link } from "react-router-dom";
 import '../index.css';
 import 'typeface-unica-one';
 import 'typeface-raleway';
@@ -38,16 +39,16 @@ function Header (props) {
             </Typography>
             <div className="header-nav">
               <Button>
-                <Link to="About" className={classes.text}>About</Link>
+                <Link to="/About" className={classes.text}>About</Link>
               </Button>
               <Button>
-                <Link to="Projects" className={classes.text}>Projects</Link>
+                <Link to="/Projects" className={classes.text}>Projects</Link>
               </Button>
               <Button>
-                <Link to="OtherInterests" className={classes.text}>Interests</Link>
+                <Link to="/Interests" className={classes.text}>Interests</Link>
               </Button>
               <Button>
-                <Link to="Contact" className={classes.text}>Contact</Link>
+                <Link to="/Contact" className={classes.text}>Contact</Link>
               </Button>
             </div>
           </Toolbar>
