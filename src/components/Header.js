@@ -6,6 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Link } from 'gatsby';
+import 'typeface-raleway';
+import 'typeface-unica-one';
 
 const styles = {
   root: {
@@ -41,7 +43,7 @@ function Header (props) {
                 <Link to="projects" className={classes.text}>Projects</Link>
               </Button>
               <Button>
-                <Link to="interests" className={classes.text}>Interests</Link>
+                <Link to="otherInterests" className={classes.text}>Interests</Link>
               </Button>
               <Button>
                 <Link to="contact" className={classes.text}>Contact</Link>

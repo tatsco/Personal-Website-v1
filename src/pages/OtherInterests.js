@@ -13,6 +13,8 @@ import forensicnexus from '../images/forensicnexus.png';
 import loveterese from '../images/loveterese.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import 'typeface-raleway';
+import 'typeface-unica-one';
 
 const styles = theme => ({
   card: {
