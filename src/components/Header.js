@@ -43,7 +43,7 @@ function Header (props) {
                 <Link to="Projects" className={classes.text}>Projects</Link>
               </Button>
               <Button>
-                <Link to="PtherInterests" className={classes.text}>Interests</Link>
+                <Link to="OtherInterests" className={classes.text}>Interests</Link>
               </Button>
               <Button>
                 <Link to="Contact" className={classes.text}>Contact</Link>
