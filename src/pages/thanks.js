@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import 'typeface-unica-one';
 
 const styles = theme => ({
@@ -26,6 +28,7 @@ const thanks = (props) => {
 
   return (
     <div className="thanks">
+      <Header/>
       <Paper className={classes.root}>
         <Typography
           className={classes.headerText}
@@ -34,6 +37,7 @@ const thanks = (props) => {
           >Your message has been received. Thank you!
           </Typography>
       </Paper>
+      <Footer/>
     </div>
   )
 };
@@ -43,5 +47,8 @@ thanks.propTypes = {
 };
 
 export default withStyles(styles)(thanks);
+
+
+
 
 

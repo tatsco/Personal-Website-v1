@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import ListItem from '@material-ui/core/ListItem';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
@@ -92,6 +94,7 @@ class Contact extends React.Component {
 
     return (
       <div className="projects">
+        <Header/>
         <Paper className={classes.root}>
           <Typography
             className={classes.header}
@@ -160,6 +163,7 @@ class Contact extends React.Component {
           </ListItem>
         </form>
         </Paper>
+        <Footer/>
       </div>
     )
   }

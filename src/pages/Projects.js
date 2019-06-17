@@ -9,9 +9,12 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import bookstack from '../images/bookstack.png';
 import spacevip from '../images/spacevip.png';
 import kagu from '../images/kagu.png';
+import '../index.css';
 import 'typeface-unica-one';
 import 'typeface-raleway';
 
@@ -82,6 +85,7 @@ const Projects = (props) => {
 
   return (
     <div className="projects">
+      <Header/>
       <Paper className={classes.root}>
         <Typography className={classes.headerText} variant="h4" align="center">
           Projects
@@ -132,6 +136,7 @@ const Projects = (props) => {
         }
         </Grid>
       </Paper>
+      <Footer/>
     </div>
   )
 }
