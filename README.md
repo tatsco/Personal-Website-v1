@@ -17,7 +17,7 @@
 
 ```
 npm install
-gastsby develop
+gatsby develop
 ```
 
 
