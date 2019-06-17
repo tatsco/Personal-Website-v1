@@ -11,9 +11,6 @@ import TableRow from '@material-ui/core/TableRow';
 import headshot from '../images/headshot.gif';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../index.css';
-import 'typeface-unica-one';
-import 'typeface-raleway';
 
 const styles = theme => ({
   root: {

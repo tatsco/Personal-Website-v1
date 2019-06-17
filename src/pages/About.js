@@ -5,8 +5,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import 'typeface-unica-one';
-import 'typeface-raleway';
 
 const styles = theme => ({
   root: {

@@ -7,9 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import githubIcon from '../images/githubIcon.png';
 import linkedinIcon from '../images/linkedinIcon.png';
 import mediumIcon from '../images/mediumIcon.png';
-import '../index.css';
-import 'typeface-unica-one';
-import 'typeface-raleway';
 
 const styles =  {
   appBar: {

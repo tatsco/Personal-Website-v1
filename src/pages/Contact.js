@@ -9,8 +9,6 @@ import Button from '@material-ui/core/Button';
 import ListItem from '@material-ui/core/ListItem';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import 'typeface-unica-one';
-import 'typeface-raleway';
 
 const encode = (data) => {
   return Object.keys(data)
