@@ -38,13 +38,13 @@ function Header (props) {
             </Typography>
             <div className="header-nav">
               <Button>
-                <Link to="/About" className={classes.text}>About</Link>
+                <Link to="About" className={classes.text}>About</Link>
               </Button>
               <Button>
-                <Link to="/Projects" className={classes.text}>Projects</Link>
+                <Link to="Projects" className={classes.text}>Projects</Link>
               </Button>
               <Button>
-                <Link to="/OtherInterests" className={classes.text}>Interests</Link>
+                <Link to="OtherInterests" className={classes.text}>Interests</Link>
               </Button>
               <Button>
                 <Link to="Contact" className={classes.text}>Contact</Link>

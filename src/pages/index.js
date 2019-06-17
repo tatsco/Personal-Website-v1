@@ -1,5 +1,4 @@
 import React from "react";
-import { Router} from "@reach/router";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -10,10 +9,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import headshot from '../images/headshot.gif';
-import About from './About';
-import Projects from './Projects';
-import OtherInterests from './OtherInterests';
-import Contact from './Contact';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../index.css';
@@ -112,12 +107,6 @@ const Home = (props) => {
             ))}
           </TableBody>
         </Table>
-        <Router>
-          <About path="/About"/>
-          <Projects path='/Projects'/>
-          <OtherInterests path='/OtherInterests'/>
-          <Contact path='/Contact'/>
-        </Router>
       </Paper>
       <Footer/>
     </div>
