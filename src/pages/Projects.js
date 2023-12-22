@@ -11,12 +11,15 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import bookstack from '../images/bookstack.png';
 import spacevip from '../images/spacevip.png';
-import kagu from '../images/kagu.png';
+import sistermarysaid from '../images/sistermarysaid.png';
+import comingsoon from '../images/comingsoon.png';
 import '../index.css';
 import 'typeface-unica-one';
 import 'typeface-raleway';
+// Deprecated project images
+// import bookstack from '../images/bookstack.png';
+// import kagu from '../images/kagu.png';
 
 
 const styles = theme => ({
@@ -56,25 +59,25 @@ const styles = theme => ({
 const projectList = [
   {
     projectNumber: 1,
-    imgUrl: kagu,
-    imgTitle: 'Pear Kagu',
-    siteUrl: 'http://www.gokagu.com/',
-    description: "A learning tool built with PostgreSQL, Sequelize, Express, React, Redux and Material UI. Aggregated data from external YouTube, Meetup and News API's."
+    imgUrl: comingsoon,
+    imgTitle: 'SmokinTandy',
+    siteUrl: '',
+    description: 'Work in Progress. Coming Soon.'
   },
   {
     projectNumber: 2,
+    imgUrl: sistermarysaid,
+    imgTitle: 'Sister Mary Said',
+    siteUrl: 'https://www.sistermarysaid.com/',
+    description: "A unique heartfelt interactive and nostalgic tribute reminiscent of the 'Magic 8 Ball' experience, where users can connect with the wisdom of my late grandmother. React and CSS boilerplate on the front-end, Amazon Route 53 for hosting, AWS Amplify for deployment, S3 buckets to stream personalized audio responses."
+  },
+  {
+    projectNumber: 3,
     imgUrl: spacevip,
     imgTitle: 'Space VIP',
     siteUrl: 'https://tatsco.github.io/SpaceVIP/',
     description: "A VR scene built with A-Frame for desktop, mobile and headset devices. Built as part of a 3-day hackathon, and won a People's Choice award."
-  },
-  {
-    projectNumber: 3,
-    imgUrl: bookstack,
-    imgTitle: 'Book Stack',
-    siteUrl: 'http://bookstack-gs.herokuapp.com/',
-    description: 'E-commerce bookstore,built using Javascript, React, Redux, Materiul UI, Node, Express and Sequelize. Used a Stripe API for checkout functionality.'
-  },
+  }
 ]
 
 

@@ -24,6 +24,7 @@ const styles = theme => ({
   },
   bodyText: {
     fontFamily: 'Raleway',
+    paddingBottom: '20px',
   },
 });
 
@@ -38,20 +39,20 @@ const About = (props) => {
         <Typography className={classes.headerText} variant="h4" align="center">
           About Me
         </Typography>
-        <Typography className={classes.bodyText} component="p" variant="body2">
-        I am impassioned S.T.E.A.M. (Science, Technology, Education, Art and Mathematics) professional with an unquenchable affinity for understanding what, how and why things work (the scientific method), which drives my interests in science, technology and herbalism.
+        <Typography className={classes.bodyText} component="p" variant="h5">
+          I bring a wealth of experience from the field of Forensic Science and, more recently, Software Engineering. With six years as a Forensic Scientist at the NYPD, I analyzed over 1500 cases, testifying as an expert witness in court three times. This background has equipped me with a distinctive problem-solving perspective and a versatile technical skill set.
         </Typography>
-        <Typography className={classes.bodyText} component="p" variant="body2">
-        I've worked in the Forensic Science industry for 8 years performing a variety of sample and data analysis and I worked on a team researching the implementation of new instrumentation to increase efficiency in the laboratory.
+        <Typography className={classes.bodyText} component="p" variant="h5">
+          In my transition to Software Engineering, I've made substantial contributions at Verizon and McKinsey & Company. Notable projects include the redesign of the Open Source website, automation of Inner Source project governance, and development of an internal feedback and performance evaluations application. My expertise spans Cybersecurity, Risk Management, and Data Privacy, cultivated through roles as the cyber "guardian" at McKinsey and contributions to the development of the Data Leakage Detection and Prevention CLI tool at Verizon.
         </Typography>
-        <Typography className={classes.bodyText} component="p" variant="body2">
-        In that time, I worked closely in a collective of proficient web design and development professionals to build and promote an online resource to connect real-life forensic experts with students for career mentorship and guidance. Through this work, I learned Javascript, CSS, and HTML in my spare time and realized that I enjoyed working on a team, brainstorming ideas and ways to build and manifest those ideas using new technologies.
+        <Typography className={classes.bodyText} component="p" variant="h5">
+          Complementing my professional journey, I've delved into herbalism both as a spiritual practice and as a formal pursuit to advance a herbal remedy and health/beauty product line.
         </Typography>
-        <Typography className={classes.bodyText} component="p" variant="body2">
-        In my spare time, I've also studied herbalism for three years as a spiritual practice and also as a formal means to further my work towards my herbal remedy and health/beauty product line.
+        <Typography className={classes.bodyText} component="p" variant="h5">
+          What propels my professional drive is an innate curiosity and a commitment to excellence. My approach blends observation, exploration, experimentation, interpretation, and implementation, with a touch of creative expression. This journey has not only refined my technical prowess but instilled in me a dedication to delivering outstanding results.
         </Typography>
-        <Typography className={classes.bodyText} component="p" variant="body2">
-        With an innate need to inquire, learn, create and improve, I seek a role that involves a combination of observation, exploration, experimentation, interpretation, implementation and some room for creative and artistic expression. It would be a dream to fuse my past experiences with my current skillset and education.
+        <Typography className={classes.bodyText} component="p" variant="h5">
+          Seeking opportunities that allow me to integrate my diverse skill set, innovative mindset, and insatiable curiosity, I aim to continue making a positive impact. Whether navigating complex forensic analyses or pioneering cutting-edge software applications, I am driven to excel. Let's embark on a journey where challenges are opportunities for growth, and solutions lead us toward excellence.
         </Typography>
       </Paper>
       <Footer/>

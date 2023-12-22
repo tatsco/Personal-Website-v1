@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 import 'typeface-raleway';
 import 'typeface-unica-one';
 
+
 const encode = (data) => {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -74,7 +75,7 @@ class Contact extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const form = e.target
+    const form = e.target;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -83,7 +84,7 @@ class Contact extends React.Component {
         ...this.state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      // .then(() => navigation.navigate(form.getAttribute('action')))
       .catch(error => alert(error));
   };
 

@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import headshot from '../images/headshot.gif';
+// import Table from '@material-ui/core/Table';
+// import TableBody from '@material-ui/core/TableBody';
+// import TableCell from '@material-ui/core/TableCell';
+// import TableHead from '@material-ui/core/TableHead';
+// import TableRow from '@material-ui/core/TableRow';
+// import headshot from '../images/headshot.gif';
+import comingsoon from '../images/comingsoon.png';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import 'typeface-raleway';
@@ -26,7 +27,7 @@ const styles = theme => ({
     background: 'rgba(247, 247, 247, 0.21)',
   },
   homeImg: {
-    maxWidth: '150px',
+    // maxWidth: '150px',
     width: '100%',
     marginTop: '10px',
     marginLeft: 'auto',
@@ -61,14 +62,14 @@ function createData(heading, skill) {
   return { id, heading, skill };
 }
 
-const rows = [
-  createData('Languages', 'Javascript, Python, SQL'),
-  createData('Frontend Development', 'React, Redux, HTML/CSS'),
-  createData('Backend Development', 'Node, Express, PostgreSQL'),
-  createData('Test Driven Development', 'Mocha, Chai, Jasmine, Enzyme'),
-  createData('Leadership Skills', 'Agile Project Management, Mentorship and Teaching'),
-  createData('Soft Skills', 'Critical Thinker and Problem Solver, Detail Oriented and Active Listener, Fast Learner and Self Starter, Team-Player')
-];
+// const rows = [
+//   createData('Languages', 'Javascript, Python, SQL'),
+//   createData('Frontend Development', 'React, Redux, HTML/CSS'),
+//   createData('Backend Development', 'Node, Express, PostgreSQL'),
+//   createData('Test Driven Development', 'Mocha, Chai, Jasmine, Enzyme'),
+//   createData('Leadership Skills', 'Agile Project Management, Mentorship and Teaching'),
+//   createData('Soft Skills', 'Critical Thinker and Problem Solver, Detail Oriented and Active Listener, Fast Learner and Self Starter, Team-Player')
+// ];
 
 const Home = (props) => {
 
@@ -78,20 +79,20 @@ const Home = (props) => {
     <div className="index">
       <Header/>
       <Paper className={classes.root}>
-        <img className={classes.homeImg} src={headshot} alt="Me"/>
-        <Typography
+      <Typography
           className={classes.homeTextTitle}
           variant="h4"
           align="center"
-        >Full-Stack Software Engineer
+        >Bare with me as I update my personal website.
         </Typography>
-        <Typography
+        <img className={classes.homeImg} src={comingsoon} alt="Me"/>
+        {/* <Typography
           className={classes.homeTextDescrip}
           variant="body"
           align="center"
-        >I am a Full Stack Software Engineer with nine years working in STEM. I have one year of experience working in agile environments building web applications primarily with Javascript. I am seeking a role that leans more towards the frontend with a possible opportunity to explore the backend, as well as the ability to continue learning and growing as a developer.
-        </Typography>
-        <Table className={classes.table} align="center">
+        >
+        </Typography> */}
+        {/* <Table className={classes.table} align="center">
           <TableHead>
             <TableRow>
               <TableCell align="center" variant="head">Skill Snippet</TableCell>
@@ -105,7 +106,7 @@ const Home = (props) => {
             </TableRow>
             ))}
           </TableBody>
-        </Table>
+        </Table> */}
       </Paper>
       <Footer/>
     </div>

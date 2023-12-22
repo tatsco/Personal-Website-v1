@@ -53,7 +53,7 @@ function Footer (props) {
           className={classes.text}
           variant="caption"
           gutterBottom
-        > © 2019 Made by Tatiana Scott
+        > © 2023 Made by Tatiana Scott
         </Typography>
       </Toolbar>
     </AppBar>
