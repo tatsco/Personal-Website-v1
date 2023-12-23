@@ -37,16 +37,16 @@ function Header (props) {
             </Typography>
             <div className="header-nav">
               <Button>
-                <Link to="About" className={classes.text}>About</Link>
+                <Link to="/about" className={classes.text}>About</Link>
               </Button>
               <Button>
-                <Link to="Projects" className={classes.text}>Projects</Link>
+                <Link to="/projects" className={classes.text}>Projects</Link>
               </Button>
               <Button>
-                <Link to="OtherInterests" className={classes.text}>Interests</Link>
+                <Link to="/interests" className={classes.text}>Interests</Link>
               </Button>
               <Button>
-                <Link to="Contact" className={classes.text}>Contact</Link>
+                <Link to="/contact" className={classes.text}>Contact</Link>
               </Button>
             </div>
           </Toolbar>

@@ -84,8 +84,8 @@ class Contact extends React.Component {
         ...this.state,
       }),
     })
-      // .then(() => navigation.navigate(form.getAttribute('action')))
-      .catch(error => alert(error));
+    .then(() => console.log("submitted successfully!"))
+    .catch(error => alert(error));
   };
 
   render () {
@@ -109,59 +109,59 @@ class Contact extends React.Component {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             method="post"
-            action="/thanks"
+            action="/pages/thanks"
           >
-          <input type="hidden" name="form-name" value="contact" />
-          <TextField
-            id="standard-firstname"
-            name="firstName"
-            label="First Name"
-            type="text"
-            className={classes.textField}
-            value={firstName}
-            onChange={this.handleChange}
-            margin="normal"
-          />
-          <TextField
-            id="standard-lastname"
-            label="Last Name"
-            type="text"
-            name="lastName"
-            className={classes.textField}
-            value={lastName}
-            onChange={this.handleChange}
-            margin="normal"
-          />
-          <TextField
-            id="standard-email"
-            label="Email"
-            type="email"
-            name="_replyto"
-            className={classes.textField}
-            value={_replyTo}
-            onChange={this.handleChange}
-            margin="normal"
-          />
-          <TextField
-            id="standard-message"
-            label="Message"
-            type="text"
-            name="message"
-            className={classes.textField}
-            value={message}
-            onChange={this.handleChange}
-            margin="normal"
-            multiline
-            rows="5"
-          />
-          <ListItem className={classes.container}>
-            <Button
-              className={classes.button}
-              type="submit"
-              >Submit
-            </Button>
-          </ListItem>
-        </form>
+            <input type="hidden" name="form-name" value="contact" />
+            <TextField
+              id="standard-firstname"
+              name="firstName"
+              label="First Name"
+              type="text"
+              className={classes.textField}
+              value={firstName}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+            <TextField
+              id="standard-lastname"
+              label="Last Name"
+              type="text"
+              name="lastName"
+              className={classes.textField}
+              value={lastName}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+            <TextField
+              id="standard-email"
+              label="Email"
+              type="email"
+              name="_replyto"
+              className={classes.textField}
+              value={_replyTo}
+              onChange={this.handleChange}
+              margin="normal"
+            />
+            <TextField
+              id="standard-message"
+              label="Message"
+              type="text"
+              name="message"
+              className={classes.textField}
+              value={message}
+              onChange={this.handleChange}
+              margin="normal"
+              multiline
+              rows="5"
+            />
+            <ListItem className={classes.container}>
+              <Button
+                className={classes.button}
+                type="submit"
+                >Submit
+              </Button>
+            </ListItem>
+          </form>
         </Paper>
         <Footer/>
       </div>

@@ -56,11 +56,11 @@ const styles = theme => ({
   },
 });
 
-let id = 0;
-function createData(heading, skill) {
-  id += 1;
-  return { id, heading, skill };
-}
+// let id = 0;
+// function createData(heading, skill) {
+//   id += 1;
+//   return { id, heading, skill };
+// }
 
 // const rows = [
 //   createData('Languages', 'Javascript, Python, SQL'),
@@ -85,7 +85,7 @@ const Home = (props) => {
           align="center"
         >Bare with me as I update my personal website.
         </Typography>
-        <img className={classes.homeImg} src={comingsoon} alt="Me"/>
+        <img className={classes.homeImg} src={comingsoon} alt="coming soon"/>
         {/* <Typography
           className={classes.homeTextDescrip}
           variant="body"
