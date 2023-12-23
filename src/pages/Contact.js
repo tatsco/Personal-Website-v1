@@ -62,7 +62,7 @@ class Contact extends React.Component {
     this.state = {
       firstName: '',
       lastName: '',
-      _replyto: '',
+      replyto: '',
       message: '',
     }
     this.handleChange = this.handleChange.bind(this);
@@ -84,13 +84,19 @@ class Contact extends React.Component {
         ...this.state,
       }),
     })
-    .then(() => console.log("submitted successfully!"))
+    .then(() => alert("Submitted Successfully!"))
+    .then(() => this.setState({
+      firstName: '',
+      lastName: '',
+      replyto: '',
+      message: '',
+    }))
     .catch(error => alert(error));
   };
 
   render () {
     const { classes } = this.props;
-    const { firstName, lastName, _replyTo, message} = this.state;
+    const { firstName, lastName, replyTo, message} = this.state;
 
     return (
       <div className="projects">
@@ -136,9 +142,9 @@ class Contact extends React.Component {
               id="standard-email"
               label="Email"
               type="email"
-              name="_replyto"
+              name="replyto"
               className={classes.textField}
-              value={_replyTo}
+              value={replyTo}
               onChange={this.handleChange}
               margin="normal"
             />
